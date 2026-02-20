@@ -4,7 +4,6 @@
 <?php
 
 use SecureShield\Logger\Logger;
-
 namespace SecureShield\Core;
 
 class Plugin {

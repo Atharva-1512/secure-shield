@@ -1,9 +1,4 @@
-
-
-
 <?php
-
-use SecureShield\Logger\Logger;
 
 namespace SecureShield\Core;
 
