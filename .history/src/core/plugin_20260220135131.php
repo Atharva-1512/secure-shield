@@ -12,9 +12,6 @@ class Plugin {
 
     public function init() {
         $this->register_hooks();
-
-        $login_protector = new LoginProtector();
-    $login_protector->init();
     }
 
     private function register_hooks() {
