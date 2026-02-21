@@ -41,7 +41,7 @@ class LoginProtector {
         $ip = $this->get_user_ip();
         $attempts = get_transient($this->get_transient_key($ip));
 
-        if ($attempts && $attempts >= $this->get_max_attempts()) {
+        if ($attempts && $attempts >= $this->max_attempts) {
             return new \WP_Error(
                 'secure_shield_lockout',
                 __('Too many failed login attempts. Try again later.')
